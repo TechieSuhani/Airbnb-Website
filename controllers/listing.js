@@ -27,7 +27,7 @@ module.exports.showListing = async (req,res) => {
    }
 
     console.log(listing);
-    res.render("Listings/show.ejs", {listing});
+    res.render("listings/show.ejs", {listing});
 };
 
 module.exports.createListing = async (req, res, next) => {
