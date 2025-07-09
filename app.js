@@ -104,7 +104,7 @@ app.use((req, res, next) => {
 
 app.get("/", async (req, res) => {
   const listings = await Listing.find({});
-  res.render("index", { listings });
+  res.render("listings/index", { listings });
 });
 
 // app.get("/demouser", async(req,res) => {
