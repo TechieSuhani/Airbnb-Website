@@ -103,9 +103,10 @@ app.use((req, res, next) => {
 
 
 app.get("/", async (req, res) => {
-  const listings = await Listing.find({});
+  const allListings = await Listing.find({});
   res.render("listings/index", { allListings });
 });
+
 
 // app.get("/demouser", async(req,res) => {
 //     let fakeUser = new User({
